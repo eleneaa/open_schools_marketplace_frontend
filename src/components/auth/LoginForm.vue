@@ -5,7 +5,7 @@
       <AuthInput v-model="loginValue" id="login" type="text" ph="UsernameExmaple" />
       <label for="password">Пароль</label>
       <AuthInput v-model="passwordValue" id="password" type="password" ph="Пароль" />
-      <RouterLink to=" register" class="text-sm">Забыли пароль?</RouterLink>
+      <RouterLink to="register" class="text-sm">Забыли пароль?</RouterLink>
     </div>
 
     <button type="submit" class="bg-[#2698FF] rounded-lg text-white p-2">Войти</button>
