@@ -5,7 +5,7 @@
       <AuthInput id="login" type="text" ph="UsernameExmaple" />
       <label for="password">Пароль</label>
       <AuthInput id="password" type="password" ph="Пароль" />
-      <RouterLink to=" register" class="text-sm">Забыли пароль?</RouterLink>
+      <RouterLink to="register" class="text-sm">Забыли пароль?</RouterLink>
     </div>
 
     <button class="bg-[#2698FF] rounded-lg text-white p-2">Войти</button>

@@ -6,9 +6,13 @@
           <RouterLink to="login" active-class="text-[#1890FF]">Вход</RouterLink>
           <RouterLink to="register" active-class="text-[#1890FF]">Регистрация</RouterLink>
         </div>
-        <Transition>
-          <RouterView />
-        </Transition>
+
+        <RouterView v-slot="{ Component }">
+          <Transition mode="out-in">
+            <component :is="Component" />
+          </Transition>
+        </RouterView>
+
       </div>
       <div class="w-1 bg-black rounded-full transition-all duration-300"></div>
       <h1 class="text-6xl my-auto">
@@ -38,7 +42,7 @@ const parentHeight = computed(() => route.name === 'login'
 <style scoped>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 2s ease;
+  transition: opacity 0.15s ease;
 }
 
 .v-enter-from,
